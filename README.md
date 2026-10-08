@@ -32,7 +32,7 @@ Retail stores generate large volumes of transaction data but rarely turn it into
 
 ## 🗂️ Dataset
 
-Synthetic supermarket transactions (large volume) with a metadata file describing the columns. The data intentionally contains dirty records (missing values, duplicates, inconsistent formats, outliers) to practice cleaning.
+Synthetic supermarket transactions (large volume) . The data  contains dirty records (missing values, duplicates, inconsistent formats, outliers) to clean.
 
 ## 📁 Repository Structure
 
