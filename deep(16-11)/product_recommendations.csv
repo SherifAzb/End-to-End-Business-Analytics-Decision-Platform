@@ -1,0 +1,346 @@
+Product_ID,Product,Suggested_ID,Suggested,Confidence,Lift
+P001,Milk 1L,P013,Baladi Bread Pack,0.6297,4.6165
+P001,Milk 1L,P022,Eggs 12pc,0.4923,4.3897
+P001,Milk 1L,P040,Oats 500g,0.1546,2.6007
+P002,Milk 500ml,P109,Hand Wash 350ml,0.0429,1.2429
+P002,Milk 500ml,P023,Eggs 30pc,0.0427,1.2685
+P003,Yogurt 170g,P095,Tissues Box,0.0421,1.237
+P003,Yogurt 170g,P019,Cake Slice,0.0419,1.21
+P003,Yogurt 170g,P108,Toothbrush 2pk,0.0419,1.216
+P004,Greek Yogurt 150g,P018,Pita Bread,0.0459,1.2939
+P004,Greek Yogurt 150g,P028,Frozen Chicken Nuggets,0.0428,1.2458
+P004,Greek Yogurt 150g,P043,Bulgur 500g,0.0426,1.2245
+P005,White Cheese 500g,P071,Nuts Mix 250g,0.0442,1.3048
+P005,White Cheese 500g,P055,Pickles Jar,0.044,1.2958
+P005,White Cheese 500g,P088,Lettuce 1pc,0.0438,1.253
+P006,Cheddar Cheese Slices,P014,Toast Bread,0.3611,4.6525
+P006,Cheddar Cheese Slices,P007,Butter 200g,0.0717,1.3353
+P007,Butter 200g,P014,Toast Bread,0.4003,5.1574
+P007,Butter 200g,P006,Cheddar Cheese Slices,0.079,1.3353
+P008,Cream Cheese 200g,P050,Ketchup 340g,0.043,1.224
+P008,Cream Cheese 200g,P131,Baby Formula 400g,0.043,1.2485
+P008,Cream Cheese 200g,P053,Hot Sauce 150ml,0.0413,1.2334
+P009,Mozzarella 250g,P050,Ketchup 340g,0.0447,1.2716
+P009,Mozzarella 250g,P107,Deodorant,0.0436,1.2883
+P009,Mozzarella 250g,P092,Peppers 1kg,0.0429,1.2636
+P010,Labneh 250g,P048,Olive Oil 500ml,0.0434,1.2693
+P010,Labneh 250g,P099,Bleach 1L,0.0434,1.2593
+P010,Labneh 250g,P031,Beef Sausage,0.043,1.2463
+P011,Cream 200ml,P085,Oranges 1kg,0.0481,1.3686
+P011,Cream 200ml,P096,Trash Bags,0.0432,1.2607
+P011,Cream 200ml,P045,Sunflower Oil 2L,0.043,1.2536
+P012,Ghee 500g,P090,Strawberries 500g,0.0438,1.2547
+P012,Ghee 500g,P051,Mustard 200g,0.0436,1.2493
+P012,Ghee 500g,P102,Paper Towels 2pk,0.0434,1.2731
+P013,Baladi Bread Pack,P001,Milk 1L,0.7754,4.6165
+P013,Baladi Bread Pack,P022,Eggs 12pc,0.5982,5.3339
+P014,Toast Bread,P007,Butter 200g,0.2769,5.1574
+P014,Toast Bread,P006,Cheddar Cheese Slices,0.2753,4.6525
+P015,Croissant,P025,Chicken Breast 500g,0.0422,1.2297
+P015,Croissant,P048,Olive Oil 500ml,0.0422,1.2329
+P015,Croissant,P036,Flour 1kg,0.0417,1.2033
+P016,Biscuits Pack,P064,Instant Coffee Jar,0.0414,1.2175
+P016,Biscuits Pack,P023,Eggs 30pc,0.0406,1.205
+P017,Burger Buns 6pk,P045,Sunflower Oil 2L,0.0425,1.2406
+P017,Burger Buns 6pk,P103,Air Freshener,0.041,1.2013
+P017,Burger Buns 6pk,P037,Lentils 500g,0.0408,1.2072
+P018,Pita Bread,P004,Greek Yogurt 150g,0.045,1.2939
+P018,Pita Bread,P075,Candy Bag,0.0415,1.2032
+P018,Pita Bread,P095,Tissues Box,0.0415,1.2182
+P019,Cake Slice,P108,Toothbrush 2pk,0.0436,1.2641
+P019,Cake Slice,P029,Beef Burger Pack,0.0419,1.2184
+P019,Cake Slice,P003,Yogurt 170g,0.041,1.21
+P020,Rusk,P090,Strawberries 500g,0.0451,1.2922
+P020,Rusk,P031,Beef Sausage,0.0428,1.2408
+P021,Pastry Box,P061,Apple Juice 1L,0.0428,1.2572
+P021,Pastry Box,P033,Basmati Rice 1kg,0.0426,1.2526
+P021,Pastry Box,P096,Trash Bags,0.0426,1.2437
+P022,Eggs 12pc,P001,Milk 1L,0.7373,4.3897
+P022,Eggs 12pc,P013,Baladi Bread Pack,0.7275,5.3339
+P023,Eggs 30pc,P080,Potatoes 1kg,0.0429,1.246
+P023,Eggs 30pc,P015,Croissant,0.0426,1.2269
+P023,Eggs 30pc,P100,Fabric Softener 1L,0.0422,1.2543
+P024,Chicken 1kg,P032,Rice 1kg,0.7199,5.8397
+P024,Chicken 1kg,P044,Cooking Oil 1L,0.4995,5.096
+P025,Chicken Breast 500g,P015,Croissant,0.0427,1.2297
+P025,Chicken Breast 500g,P078,Dark Chocolate,0.0425,1.2324
+P025,Chicken Breast 500g,P051,Mustard 200g,0.0423,1.2126
+P026,Chicken Thighs 1kg,P082,Bananas 1kg,0.044,1.2832
+P026,Chicken Thighs 1kg,P121,Jam 340g,0.043,1.2687
+P026,Chicken Thighs 1kg,P087,Carrots 1kg,0.0419,1.2055
+P027,Turkey Slices,P119,Cumin 50g,0.0454,1.3293
+P027,Turkey Slices,P118,Black Pepper 50g,0.0418,1.2096
+P027,Turkey Slices,P115,Salt 700g,0.0412,1.2138
+P028,Frozen Chicken Nuggets,P004,Greek Yogurt 150g,0.0433,1.2458
+P028,Frozen Chicken Nuggets,P065,Energy Drink,0.0425,1.2358
+P028,Frozen Chicken Nuggets,P091,Garlic 250g,0.0414,1.217
+P029,Beef Burger Pack,P075,Candy Bag,0.045,1.3042
+P029,Beef Burger Pack,P072,Popcorn,0.0428,1.2552
+P029,Beef Burger Pack,P096,Trash Bags,0.0426,1.2452
+P030,Minced Beef 500g,P081,Onions 1kg,0.3841,4.1215
+P031,Beef Sausage,P020,Rusk,0.0427,1.2408
+P031,Beef Sausage,P042,Couscous 500g,0.0423,1.2712
+P031,Beef Sausage,P078,Dark Chocolate,0.0419,1.2133
+P032,Rice 1kg,P024,Chicken 1kg,0.6479,5.8397
+P032,Rice 1kg,P044,Cooking Oil 1L,0.4587,4.6795
+P033,Basmati Rice 1kg,P041,Cornflakes 375g,0.0446,1.2889
+P033,Basmati Rice 1kg,P051,Mustard 200g,0.0446,1.2786
+P033,Basmati Rice 1kg,P021,Pastry Box,0.0433,1.2526
+P034,Pasta 400g,P046,Tomato Sauce 360g,0.5784,7.1489
+P035,Spaghetti 500g,P095,Tissues Box,0.0412,1.2102
+P036,Flour 1kg,P054,Tahini 400g,0.0441,1.3048
+P036,Flour 1kg,P070,Chocolate Bar,0.0429,1.2473
+P036,Flour 1kg,P118,Black Pepper 50g,0.042,1.2158
+P037,Lentils 500g,P087,Carrots 1kg,0.0434,1.2492
+P037,Lentils 500g,P052,Vinegar 500ml,0.0429,1.2406
+P037,Lentils 500g,P045,Sunflower Oil 2L,0.0416,1.2154
+P038,Fava Beans Can,P070,Chocolate Bar,0.0462,1.3447
+P038,Fava Beans Can,P043,Bulgur 500g,0.0436,1.2554
+P038,Fava Beans Can,P100,Fabric Softener 1L,0.0428,1.271
+P039,Chickpeas 500g,P025,Chicken Breast 500g,0.0414,1.207
+P039,Chickpeas 500g,P096,Trash Bags,0.0414,1.2088
+P039,Chickpeas 500g,P102,Paper Towels 2pk,0.0412,1.2083
+P040,Oats 500g,P001,Milk 1L,0.4368,2.6007
+P041,Cornflakes 375g,P112,Razor Pack,0.0445,1.3008
+P041,Cornflakes 375g,P033,Basmati Rice 1kg,0.0438,1.2889
+P041,Cornflakes 375g,P066,Malt Drink,0.0425,1.2406
+P042,Couscous 500g,P048,Olive Oil 500ml,0.0441,1.288
+P042,Couscous 500g,P031,Beef Sausage,0.0438,1.2712
+P042,Couscous 500g,P011,Cream 200ml,0.0423,1.227
+P043,Bulgur 500g,P004,Greek Yogurt 150g,0.0426,1.2245
+P043,Bulgur 500g,P038,Fava Beans Can,0.0426,1.2554
+P043,Bulgur 500g,P036,Flour 1kg,0.0417,1.2033
+P044,Cooking Oil 1L,P032,Rice 1kg,0.5769,4.6795
+P044,Cooking Oil 1L,P024,Chicken 1kg,0.5654,5.096
+P045,Sunflower Oil 2L,P058,Water 1.5L,0.0462,1.3318
+P045,Sunflower Oil 2L,P059,Water 600ml,0.0441,1.3012
+P045,Sunflower Oil 2L,P011,Cream 200ml,0.0432,1.2536
+P046,Tomato Sauce 360g,P034,Pasta 400g,0.6065,7.1489
+P047,Tomato Paste 200g,P053,Hot Sauce 150ml,0.0429,1.2824
+P047,Tomato Paste 200g,P112,Razor Pack,0.0423,1.238
+P047,Tomato Paste 200g,P015,Croissant,0.0419,1.2049
+P048,Olive Oil 500ml,P015,Croissant,0.0429,1.2329
+P048,Olive Oil 500ml,P042,Couscous 500g,0.0429,1.288
+P048,Olive Oil 500ml,P010,Labneh 250g,0.0424,1.2693
+P049,Mayonnaise 400g,P051,Mustard 200g,0.0434,1.244
+P049,Mayonnaise 400g,P089,Grapes 1kg,0.0426,1.2522
+P049,Mayonnaise 400g,P012,Ghee 500g,0.0419,1.2343
+P050,Ketchup 340g,P009,Mozzarella 250g,0.0436,1.2716
+P050,Ketchup 340g,P060,Orange Juice 1L,0.0436,1.2299
+P050,Ketchup 340g,P008,Cream Cheese 200g,0.0428,1.224
+P051,Mustard 200g,P033,Basmati Rice 1kg,0.0435,1.2786
+P051,Mustard 200g,P088,Lettuce 1pc,0.0426,1.219
+P051,Mustard 200g,P012,Ghee 500g,0.0424,1.2493
+P052,Vinegar 500ml,P037,Lentils 500g,0.0419,1.2406
+P052,Vinegar 500ml,P005,White Cheese 500g,0.0417,1.2107
+P052,Vinegar 500ml,P102,Paper Towels 2pk,0.0417,1.224
+P053,Hot Sauce 150ml,P105,Toothpaste 100ml,0.0449,1.3226
+P053,Hot Sauce 150ml,P047,Tomato Paste 200g,0.044,1.2824
+P053,Hot Sauce 150ml,P008,Cream Cheese 200g,0.0431,1.2334
+P054,Tahini 400g,P082,Bananas 1kg,0.0455,1.325
+P054,Tahini 400g,P036,Flour 1kg,0.0453,1.3048
+P054,Tahini 400g,P077,Pretzels,0.0442,1.2779
+P055,Pickles Jar,P005,White Cheese 500g,0.0446,1.2958
+P055,Pickles Jar,P101,Aluminum Foil,0.0431,1.2565
+P055,Pickles Jar,P050,Ketchup 340g,0.0423,1.2036
+P056,Soda 1L,P068,Chips Large,0.4784,5.6577
+P056,Soda 1L,P128,Frozen Pizza,0.2316,3.8726
+P057,Soda Can 330ml,P031,Beef Sausage,0.0417,1.2102
+P057,Soda Can 330ml,P059,Water 600ml,0.0415,1.2258
+P057,Soda Can 330ml,P082,Bananas 1kg,0.0415,1.2094
+P058,Water 1.5L,P045,Sunflower Oil 2L,0.0456,1.3318
+P058,Water 1.5L,P061,Apple Juice 1L,0.0427,1.2535
+P058,Water 1.5L,P082,Bananas 1kg,0.0418,1.2184
+P059,Water 600ml,P045,Sunflower Oil 2L,0.0446,1.3012
+P059,Water 600ml,P119,Cumin 50g,0.0428,1.2552
+P059,Water 600ml,P019,Cake Slice,0.042,1.2119
+P060,Orange Juice 1L,P050,Ketchup 340g,0.0432,1.2299
+P060,Orange Juice 1L,P054,Tahini 400g,0.0415,1.2276
+P060,Orange Juice 1L,P121,Jam 340g,0.0411,1.2146
+P061,Apple Juice 1L,P080,Potatoes 1kg,0.0441,1.2829
+P061,Apple Juice 1L,P021,Pastry Box,0.0435,1.2572
+P061,Apple Juice 1L,P058,Water 1.5L,0.0435,1.2535
+P062,Tea 100 bags,P114,Sugar 1kg,0.3789,3.6403
+P063,Coffee 200g,P114,Sugar 1kg,0.5095,4.8955
+P064,Instant Coffee Jar,P076,Dates 500g,0.0553,1.2082
+P064,Instant Coffee Jar,P109,Hand Wash 350ml,0.0437,1.265
+P064,Instant Coffee Jar,P094,Laundry Powder 2kg,0.0422,1.2101
+P065,Energy Drink,P118,Black Pepper 50g,0.0443,1.2827
+P065,Energy Drink,P028,Frozen Chicken Nuggets,0.0424,1.2358
+P065,Energy Drink,P084,Cucumbers 1kg,0.0424,1.2475
+P066,Malt Drink,P041,Cornflakes 375g,0.0429,1.2406
+P066,Malt Drink,P089,Grapes 1kg,0.0429,1.2638
+P066,Malt Drink,P102,Paper Towels 2pk,0.0419,1.229
+P067,Hibiscus Drink,P087,Carrots 1kg,0.044,1.267
+P067,Hibiscus Drink,P015,Croissant,0.0423,1.216
+P067,Hibiscus Drink,P033,Basmati Rice 1kg,0.0423,1.2433
+P068,Chips Large,P056,Soda 1L,0.5452,5.6577
+P069,Chips Small,P078,Dark Chocolate,0.0416,1.2066
+P070,Chocolate Bar,P038,Fava Beans Can,0.0456,1.3447
+P070,Chocolate Bar,P036,Flour 1kg,0.0433,1.2473
+P070,Chocolate Bar,P077,Pretzels,0.042,1.2146
+P071,Nuts Mix 250g,P005,White Cheese 500g,0.045,1.3048
+P071,Nuts Mix 250g,P021,Pastry Box,0.0426,1.2308
+P071,Nuts Mix 250g,P031,Beef Sausage,0.0415,1.2034
+P072,Popcorn,P076,Dates 500g,0.0573,1.2514
+P072,Popcorn,P029,Beef Burger Pack,0.0432,1.2552
+P072,Popcorn,P095,Tissues Box,0.0427,1.2542
+P073,Cookies Box,P127,Ice Cream Tub,0.3126,5.3127
+P074,Wafer Pack,P088,Lettuce 1pc,0.0436,1.2478
+P074,Wafer Pack,P078,Dark Chocolate,0.0425,1.2329
+P074,Wafer Pack,P064,Instant Coffee Jar,0.0421,1.2374
+P075,Candy Bag,P029,Beef Burger Pack,0.0448,1.3042
+P075,Candy Bag,P018,Pita Bread,0.0427,1.2032
+P075,Candy Bag,P061,Apple Juice 1L,0.041,1.2048
+P076,Dates 500g,P122,Cocoa Powder 100g,0.0733,1.5532
+P076,Dates 500g,P117,Honey 250g,0.0696,1.4656
+P076,Dates 500g,P120,Cinnamon 50g,0.0648,1.3715
+P077,Pretzels,P054,Tahini 400g,0.0432,1.2779
+P077,Pretzels,P099,Bleach 1L,0.0422,1.2235
+P077,Pretzels,P043,Bulgur 500g,0.042,1.2074
+P078,Dark Chocolate,P103,Air Freshener,0.0437,1.2815
+P078,Dark Chocolate,P109,Hand Wash 350ml,0.0435,1.2599
+P078,Dark Chocolate,P025,Chicken Breast 500g,0.0423,1.2324
+P079,Tomatoes 1kg,P081,Onions 1kg,0.509,5.4621
+P080,Potatoes 1kg,P117,Honey 250g,0.0573,1.2067
+P080,Potatoes 1kg,P061,Apple Juice 1L,0.0437,1.2829
+P080,Potatoes 1kg,P090,Strawberries 500g,0.043,1.2323
+P081,Onions 1kg,P079,Tomatoes 1kg,0.4527,5.4621
+P081,Onions 1kg,P030,Minced Beef 500g,0.2428,4.1215
+P082,Bananas 1kg,P054,Tahini 400g,0.0448,1.325
+P082,Bananas 1kg,P026,Chicken Thighs 1kg,0.0429,1.2832
+P082,Bananas 1kg,P098,Floor Cleaner 1L,0.0427,1.2685
+P083,Apples 1kg,P131,Baby Formula 400g,0.0425,1.2343
+P083,Apples 1kg,P058,Water 1.5L,0.0418,1.2062
+P083,Apples 1kg,P119,Cumin 50g,0.0416,1.2195
+P084,Cucumbers 1kg,P122,Cocoa Powder 100g,0.0569,1.2057
+P084,Cucumbers 1kg,P065,Energy Drink,0.0429,1.2475
+P084,Cucumbers 1kg,P051,Mustard 200g,0.0424,1.2163
+P085,Oranges 1kg,P011,Cream 200ml,0.0472,1.3686
+P085,Oranges 1kg,P129,Frozen Spinach 400g,0.0438,1.2813
+P085,Oranges 1kg,P119,Cumin 50g,0.043,1.2596
+P086,Lemons 500g,P058,Water 1.5L,0.0433,1.2477
+P086,Lemons 500g,P017,Burger Buns 6pk,0.0415,1.2103
+P086,Lemons 500g,P053,Hot Sauce 150ml,0.0415,1.24
+P087,Carrots 1kg,P067,Hibiscus Drink,0.0431,1.267
+P087,Carrots 1kg,P113,Sanitary Pads,0.0431,1.2159
+P087,Carrots 1kg,P037,Lentils 500g,0.0422,1.2492
+P088,Lettuce 1pc,P005,White Cheese 500g,0.0432,1.253
+P088,Lettuce 1pc,P051,Mustard 200g,0.0425,1.219
+P088,Lettuce 1pc,P074,Wafer Pack,0.0419,1.2478
+P089,Grapes 1kg,P066,Malt Drink,0.0433,1.2638
+P089,Grapes 1kg,P018,Pita Bread,0.0431,1.215
+P089,Grapes 1kg,P049,Mayonnaise 400g,0.0427,1.2522
+P090,Strawberries 500g,P020,Rusk,0.0445,1.2922
+P090,Strawberries 500g,P012,Ghee 500g,0.0426,1.2547
+P090,Strawberries 500g,P094,Laundry Powder 2kg,0.0426,1.2215
+P091,Garlic 250g,P096,Trash Bags,0.0424,1.2392
+P091,Garlic 250g,P123,Vanilla 10g,0.0424,1.2459
+P091,Garlic 250g,P028,Frozen Chicken Nuggets,0.0418,1.217
+P092,Peppers 1kg,P127,Ice Cream Tub,0.0707,1.2017
+P092,Peppers 1kg,P009,Mozzarella 250g,0.0433,1.2636
+P092,Peppers 1kg,P050,Ketchup 340g,0.0427,1.2156
+P093,Dish Soap 750ml,P097,Sponges 3pk,0.3297,6.3275
+P094,Laundry Powder 2kg,P076,Dates 500g,0.0559,1.2203
+P094,Laundry Powder 2kg,P090,Strawberries 500g,0.0427,1.2215
+P094,Laundry Powder 2kg,P064,Instant Coffee Jar,0.0412,1.2101
+P095,Tissues Box,P115,Salt 700g,0.0458,1.3503
+P095,Tissues Box,P018,Pita Bread,0.0432,1.2182
+P095,Tissues Box,P072,Popcorn,0.0428,1.2542
+P096,Trash Bags,P011,Cream 200ml,0.0435,1.2607
+P096,Trash Bags,P021,Pastry Box,0.043,1.2437
+P096,Trash Bags,P029,Beef Burger Pack,0.0428,1.2452
+P097,Sponges 3pk,P093,Dish Soap 750ml,0.3698,6.3275
+P098,Floor Cleaner 1L,P082,Bananas 1kg,0.0435,1.2685
+P098,Floor Cleaner 1L,P090,Strawberries 500g,0.0425,1.2158
+P098,Floor Cleaner 1L,P078,Dark Chocolate,0.0422,1.2239
+P099,Bleach 1L,P111,Face Wash,0.0434,1.2674
+P099,Bleach 1L,P077,Pretzels,0.0423,1.2235
+P099,Bleach 1L,P010,Labneh 250g,0.0421,1.2593
+P100,Fabric Softener 1L,P038,Fava Beans Can,0.0431,1.271
+P100,Fabric Softener 1L,P023,Eggs 30pc,0.0422,1.2543
+P100,Fabric Softener 1L,P053,Hot Sauce 150ml,0.0422,1.2614
+P101,Aluminum Foil,P118,Black Pepper 50g,0.0438,1.2658
+P101,Aluminum Foil,P125,Frozen Okra 400g,0.0433,1.2508
+P101,Aluminum Foil,P050,Ketchup 340g,0.0427,1.2158
+P102,Paper Towels 2pk,P121,Jam 340g,0.0452,1.3338
+P102,Paper Towels 2pk,P012,Ghee 500g,0.0432,1.2731
+P102,Paper Towels 2pk,P050,Ketchup 340g,0.043,1.2247
+P103,Air Freshener,P078,Dark Chocolate,0.0442,1.2815
+P103,Air Freshener,P027,Turkey Slices,0.0421,1.2007
+P103,Air Freshener,P115,Salt 700g,0.0416,1.2272
+P104,Shampoo 400ml,P110,Hair Conditioner 400ml,0.396,7.0611
+P105,Toothpaste 100ml,P053,Hot Sauce 150ml,0.0443,1.3226
+P105,Toothpaste 100ml,P041,Cornflakes 375g,0.043,1.242
+P105,Toothpaste 100ml,P008,Cream Cheese 200g,0.0424,1.2118
+P106,Body Soap 4pk,P036,Flour 1kg,0.0422,1.2159
+P106,Body Soap 4pk,P124,Frozen Peas 400g,0.0407,1.2056
+P107,Deodorant,P009,Mozzarella 250g,0.0442,1.2883
+P107,Deodorant,P050,Ketchup 340g,0.0435,1.2397
+P107,Deodorant,P090,Strawberries 500g,0.0425,1.2157
+P108,Toothbrush 2pk,P019,Cake Slice,0.0438,1.2641
+P108,Toothbrush 2pk,P082,Bananas 1kg,0.0415,1.2076
+P108,Toothbrush 2pk,P105,Toothpaste 100ml,0.0415,1.2222
+P109,Hand Wash 350ml,P117,Honey 250g,0.0585,1.2326
+P109,Hand Wash 350ml,P078,Dark Chocolate,0.0435,1.2599
+P109,Hand Wash 350ml,P064,Instant Coffee Jar,0.0431,1.265
+P110,Hair Conditioner 400ml,P104,Shampoo 400ml,0.4143,7.0611
+P111,Face Wash,P117,Honey 250g,0.0574,1.2087
+P111,Face Wash,P099,Bleach 1L,0.0437,1.2674
+P111,Face Wash,P041,Cornflakes 375g,0.043,1.2435
+P112,Razor Pack,P041,Cornflakes 375g,0.045,1.3008
+P112,Razor Pack,P121,Jam 340g,0.044,1.2985
+P112,Razor Pack,P131,Baby Formula 400g,0.0429,1.2458
+P113,Sanitary Pads,P087,Carrots 1kg,0.0422,1.2159
+P114,Sugar 1kg,P063,Coffee 200g,0.4107,4.8955
+P114,Sugar 1kg,P062,Tea 100 bags,0.2183,3.6403
+P115,Salt 700g,P095,Tissues Box,0.046,1.3503
+P115,Salt 700g,P027,Turkey Slices,0.0425,1.2138
+P115,Salt 700g,P103,Air Freshener,0.0419,1.2272
+P116,Spice Mix,P123,Vanilla 10g,0.0447,1.312
+P116,Spice Mix,P125,Frozen Okra 400g,0.0436,1.2581
+P116,Spice Mix,P058,Water 1.5L,0.0427,1.2314
+P117,Honey 250g,P076,Dates 500g,0.0671,1.4656
+P117,Honey 250g,P122,Cocoa Powder 100g,0.0611,1.2952
+P117,Honey 250g,P120,Cinnamon 50g,0.0606,1.2836
+P118,Black Pepper 50g,P065,Energy Drink,0.0441,1.2827
+P118,Black Pepper 50g,P101,Aluminum Foil,0.0435,1.2658
+P118,Black Pepper 50g,P027,Turkey Slices,0.0424,1.2096
+P119,Cumin 50g,P027,Turkey Slices,0.0466,1.3293
+P119,Cumin 50g,P085,Oranges 1kg,0.0442,1.2596
+P119,Cumin 50g,P021,Pastry Box,0.0432,1.2475
+P120,Cinnamon 50g,P122,Cocoa Powder 100g,0.0653,1.3841
+P120,Cinnamon 50g,P076,Dates 500g,0.0628,1.3715
+P120,Cinnamon 50g,P117,Honey 250g,0.061,1.2836
+P121,Jam 340g,P102,Paper Towels 2pk,0.0455,1.3338
+P121,Jam 340g,P112,Razor Pack,0.0444,1.2985
+P121,Jam 340g,P060,Orange Juice 1L,0.0431,1.2146
+P122,Cocoa Powder 100g,P076,Dates 500g,0.0711,1.5532
+P122,Cocoa Powder 100g,P120,Cinnamon 50g,0.0654,1.3841
+P122,Cocoa Powder 100g,P117,Honey 250g,0.0615,1.2952
+P123,Vanilla 10g,P116,Spice Mix,0.0441,1.312
+P123,Vanilla 10g,P090,Strawberries 500g,0.043,1.2325
+P123,Vanilla 10g,P091,Garlic 250g,0.0424,1.2459
+P124,Frozen Peas 400g,P008,Cream Cheese 200g,0.0423,1.2116
+P124,Frozen Peas 400g,P058,Water 1.5L,0.0419,1.208
+P124,Frozen Peas 400g,P003,Yogurt 170g,0.0413,1.2165
+P125,Frozen Okra 400g,P101,Aluminum Foil,0.0429,1.2508
+P125,Frozen Okra 400g,P131,Baby Formula 400g,0.0429,1.2471
+P125,Frozen Okra 400g,P116,Spice Mix,0.0423,1.2581
+P126,Frozen Fries 1kg,P115,Salt 700g,0.0417,1.2274
+P126,Frozen Fries 1kg,P107,Deodorant,0.041,1.2121
+P126,Frozen Fries 1kg,P124,Frozen Peas 400g,0.0408,1.2089
+P127,Ice Cream Tub,P073,Cookies Box,0.2509,5.3127
+P127,Ice Cream Tub,P092,Peppers 1kg,0.0408,1.2017
+P128,Frozen Pizza,P056,Soda 1L,0.3732,3.8726
+P129,Frozen Spinach 400g,P085,Oranges 1kg,0.045,1.2813
+P129,Frozen Spinach 400g,P092,Peppers 1kg,0.0422,1.2416
+P129,Frozen Spinach 400g,P049,Mayonnaise 400g,0.0418,1.225
+P130,Diapers Pack,P132,Baby Wipes,0.4953,7.9806
+P131,Baby Formula 400g,P008,Cream Cheese 200g,0.0436,1.2485
+P131,Baby Formula 400g,P125,Frozen Okra 400g,0.0432,1.2471
+P131,Baby Formula 400g,P112,Razor Pack,0.0426,1.2458
+P132,Baby Wipes,P130,Diapers Pack,0.4813,7.9806
+P133,Baby Snack,P103,Air Freshener,0.0425,1.2441
+P133,Baby Snack,P061,Apple Juice 1L,0.0423,1.2412
+P133,Baby Snack,P075,Candy Bag,0.0423,1.2251
