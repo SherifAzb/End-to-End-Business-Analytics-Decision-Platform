@@ -1,0 +1,30 @@
+﻿Product_ID,Product,Bundle_IDs,Bundle,Size,Invoices,Share_of_Product_Invoices,Lift,Regular_Price,Discount_Share,Avg_Discount,Suggested_Discount,Offer_Price
+P001,Milk 1L,P001 + P013 + P022,Milk 1L + Baladi Bread Pack + Eggs 12pc,3,10924,0.4766,31.15,124.88,0.1954,0.1717,0.15,106.15
+P006,Cheddar Cheese Slices,P006 + P014,Cheddar Cheese Slices + Toast Bread,2,2916,0.3611,4.65,137.14,0.2003,0.1734,0.15,116.57
+P007,Butter 200g,P007 + P014,Butter 200g + Toast Bread,2,2933,0.4003,5.16,107.04,0.2087,0.1733,0.15,90.98
+P013,Baladi Bread Pack,P013 + P001 + P022,Baladi Bread Pack + Milk 1L + Eggs 12pc,3,10924,0.587,31.15,124.88,0.1954,0.1717,0.15,106.15
+P014,Toast Bread,P014 + P007,Toast Bread + Butter 200g,2,2933,0.277,5.16,107.04,0.2087,0.1733,0.15,90.98
+P022,Eggs 12pc,P022 + P001 + P013,Eggs 12pc + Milk 1L + Baladi Bread Pack,3,10924,0.7138,31.15,124.88,0.1954,0.1717,0.15,106.15
+P024,Chicken 1kg,P024 + P032 + P044,Chicken 1kg + Rice 1kg + Cooking Oil 1L,3,7307,0.4826,39.94,228.57,0.1988,0.1737,0.15,194.28
+P030,Minced Beef 500g,P030 + P081,Minced Beef 500g + Onions 1kg,2,3087,0.3841,4.12,160.56,0.1954,0.1748,0.15,136.48
+P032,Rice 1kg,P032 + P024 + P044,Rice 1kg + Chicken 1kg + Cooking Oil 1L,3,7307,0.4344,39.94,228.57,0.1988,0.1737,0.15,194.28
+P034,Pasta 400g,P034 + P046,Pasta 400g + Tomato Sauce 360g,2,6695,0.5784,7.15,33.45,0.1927,0.173,0.15,28.43
+P040,Oats 500g,P040 + P001,Oats 500g + Milk 1L,2,3544,0.4368,2.6,85.85,0.2023,0.1757,0.2,68.68
+P044,Cooking Oil 1L,P044 + P032 + P024,Cooking Oil 1L + Rice 1kg + Chicken 1kg,3,7307,0.5464,39.94,228.57,0.1988,0.1737,0.15,194.28
+P046,Tomato Sauce 360g,P046 + P034,Tomato Sauce 360g + Pasta 400g,2,6695,0.6065,7.15,33.45,0.1927,0.173,0.15,28.43
+P056,Soda 1L,P056 + P068,Soda 1L + Chips Large,2,6291,0.4784,5.66,46.83,0.2071,0.1733,0.15,39.81
+P062,Tea 100 bags,P062 + P114,Tea 100 bags + Sugar 1kg,2,3100,0.3789,3.64,94.78,0.2019,0.1726,0.15,80.56
+P063,Coffee 200g,P063 + P114,Coffee 200g + Sugar 1kg,2,5833,0.5096,4.9,142.72,0.1997,0.1741,0.15,121.31
+P068,Chips Large,P068 + P056,Chips Large + Soda 1L,2,6291,0.5453,5.66,46.83,0.2071,0.1733,0.15,39.81
+P073,Cookies Box,P073 + P127,Cookies Box + Ice Cream Tub,2,2015,0.3126,5.31,123.77,0.199,0.1768,0.2,99.02
+P079,Tomatoes 1kg,P079 + P081,Tomatoes 1kg + Onions 1kg,2,5756,0.509,5.46,35.68,0.2019,0.1705,0.15,30.33
+P081,Onions 1kg,P081 + P079,Onions 1kg + Tomatoes 1kg,2,5756,0.4527,5.46,35.68,0.2019,0.1705,0.15,30.33
+P093,Dish Soap 750ml,P093 + P097,Dish Soap 750ml + Sponges 3pk,2,2629,0.3297,6.33,54.64,0.2036,0.1783,0.2,43.71
+P097,Sponges 3pk,P097 + P093,Sponges 3pk + Dish Soap 750ml,2,2629,0.3698,6.33,54.64,0.2036,0.1783,0.2,43.71
+P104,Shampoo 400ml,P104 + P110,Shampoo 400ml + Hair Conditioner 400ml,2,3171,0.396,7.06,172.82,0.2066,0.1714,0.15,146.9
+P110,Hair Conditioner 400ml,P110 + P104,Hair Conditioner 400ml + Shampoo 400ml,2,3171,0.4143,7.06,172.82,0.2066,0.1714,0.15,146.9
+P114,Sugar 1kg,P114 + P063,Sugar 1kg + Coffee 200g,2,5833,0.4107,4.9,142.72,0.1997,0.1741,0.15,121.31
+P127,Ice Cream Tub,P127 + P073,Ice Cream Tub + Cookies Box,2,2015,0.2509,5.31,123.77,0.199,0.1768,0.2,99.02
+P128,Frozen Pizza,P128 + P056,Frozen Pizza + Soda 1L,2,3045,0.3732,3.87,124.88,0.2011,0.1725,0.15,106.15
+P130,Diapers Pack,P130 + P132,Diapers Pack + Baby Wipes,2,4076,0.4953,7.98,262.02,0.1993,0.1721,0.15,222.72
+P132,Baby Wipes,P132 + P130,Baby Wipes + Diapers Pack,2,4076,0.4813,7.98,262.02,0.1993,0.1721,0.15,222.72

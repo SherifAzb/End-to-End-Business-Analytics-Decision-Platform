@@ -1,0 +1,134 @@
+﻿Product_ID,Product,Category,Brand,Price
+P131,Baby Formula 400g,Baby & Kids,DailyBest,245.3
+P133,Baby Snack,Baby & Kids,Nile Select,22.3
+P132,Baby Wipes,Baby & Kids,Baraka,50.17
+P130,Diapers Pack,Baby & Kids,Baraka,211.85
+P013,Baladi Bread Pack,Bakery,Al Waha,11.15
+P016,Biscuits Pack,Bakery,Al Waha,15.61
+P017,Burger Buns 6pk,Bakery,Baraka,33.45
+P019,Cake Slice,Bakery,Al Waha,27.88
+P015,Croissant,Bakery,DailyBest,16.73
+P021,Pastry Box,Bakery,Al Waha,66.9
+P018,Pita Bread,Bakery,Al Waha,22.3
+P020,Rusk,Bakery,Nile Select,24.53
+P014,Toast Bread,Bakery,DailyBest,31.22
+P061,Apple Juice 1L,Beverages,Baraka,39.02
+P063,Coffee 200g,Beverages,DailyBest,109.27
+P065,Energy Drink,Beverages,FreshCo,33.45
+P067,Hibiscus Drink,Beverages,Baraka,22.3
+P064,Instant Coffee Jar,Beverages,HomeChoice,133.8
+P066,Malt Drink,Beverages,Al Waha,20.07
+P060,Orange Juice 1L,Beverages,Baraka,39.02
+P056,Soda 1L,Beverages,HomeChoice,24.53
+P057,Soda Can 330ml,Beverages,HomeChoice,13.38
+P062,Tea 100 bags,Beverages,Baraka,61.33
+P058,Water 1.5L,Beverages,Nile Select,8.92
+P059,Water 600ml,Beverages,GoldenField,5.58
+P007,Butter 200g,Dairy,FreshCo,75.82
+P006,Cheddar Cheese Slices,Dairy,Al Waha,105.92
+P011,Cream 200ml,Dairy,DailyBest,33.45
+P008,Cream Cheese 200g,Dairy,GoldenField,50.17
+P012,Ghee 500g,Dairy,Nile Select,178.4
+P004,Greek Yogurt 150g,Dairy,DailyBest,22.3
+P010,Labneh 250g,Dairy,DailyBest,42.37
+P001,Milk 1L,Dairy,FreshCo,35.68
+P002,Milk 500ml,Dairy,HomeChoice,20.07
+P009,Mozzarella 250g,Dairy,DailyBest,78.05
+P005,White Cheese 500g,Dairy,Baraka,83.62
+P003,Yogurt 170g,Dairy,DailyBest,13.38
+P029,Beef Burger Pack,Eggs & Poultry,FreshCo,122.65
+P031,Beef Sausage,Eggs & Poultry,Al Waha,78.05
+P024,Chicken 1kg,Eggs & Poultry,Nile Select,105.92
+P025,Chicken Breast 500g,Eggs & Poultry,GoldenField,94.78
+P026,Chicken Thighs 1kg,Eggs & Poultry,FreshCo,100.35
+P022,Eggs 12pc,Eggs & Poultry,Al Waha,78.05
+P023,Eggs 30pc,Eggs & Poultry,DailyBest,195.12
+P028,Frozen Chicken Nuggets,Eggs & Poultry,FreshCo,89.2
+P030,Minced Beef 500g,Eggs & Poultry,HomeChoice,144.95
+P027,Turkey Slices,Eggs & Poultry,DailyBest,100.35
+P126,Frozen Fries 1kg,Frozen,Baraka,72.47
+P125,Frozen Okra 400g,Frozen,Nile Select,31.22
+P124,Frozen Peas 400g,Frozen,DailyBest,27.88
+P128,Frozen Pizza,Frozen,DailyBest,100.35
+P129,Frozen Spinach 400g,Frozen,Al Waha,24.53
+P127,Ice Cream Tub,Frozen,HomeChoice,94.78
+P083,Apples 1kg,Fruits & Vegetables,Al Waha,50.17
+P082,Bananas 1kg,Fruits & Vegetables,Al Waha,35.68
+P087,Carrots 1kg,Fruits & Vegetables,DailyBest,15.61
+P084,Cucumbers 1kg,Fruits & Vegetables,DailyBest,16.73
+P091,Garlic 250g,Fruits & Vegetables,DailyBest,20.07
+P089,Grapes 1kg,Fruits & Vegetables,Al Waha,61.33
+P086,Lemons 500g,Fruits & Vegetables,Nile Select,22.3
+P088,Lettuce 1pc,Fruits & Vegetables,HomeChoice,13.38
+P081,Onions 1kg,Fruits & Vegetables,Al Waha,15.61
+P085,Oranges 1kg,Fruits & Vegetables,Nile Select,26.76
+P092,Peppers 1kg,Fruits & Vegetables,Nile Select,27.88
+P080,Potatoes 1kg,Fruits & Vegetables,DailyBest,17.84
+P090,Strawberries 500g,Fruits & Vegetables,Nile Select,44.6
+P079,Tomatoes 1kg,Fruits & Vegetables,Nile Select,20.07
+P033,Basmati Rice 1kg,Grains & Pasta,Nile Select,72.47
+P043,Bulgur 500g,Grains & Pasta,HomeChoice,22.3
+P039,Chickpeas 500g,Grains & Pasta,HomeChoice,31.22
+P041,Cornflakes 375g,Grains & Pasta,Nile Select,66.9
+P042,Couscous 500g,Grains & Pasta,HomeChoice,26.76
+P038,Fava Beans Can,Grains & Pasta,Baraka,20.07
+P036,Flour 1kg,Grains & Pasta,Baraka,24.53
+P037,Lentils 500g,Grains & Pasta,Nile Select,33.45
+P040,Oats 500g,Grains & Pasta,GoldenField,50.17
+P034,Pasta 400g,Grains & Pasta,FreshCo,15.61
+P032,Rice 1kg,Grains & Pasta,FreshCo,42.37
+P035,Spaghetti 500g,Grains & Pasta,Al Waha,17.84
+P103,Air Freshener,Household,Baraka,55.75
+P101,Aluminum Foil,Household,Al Waha,33.45
+P099,Bleach 1L,Household,Al Waha,27.88
+P093,Dish Soap 750ml,Household,DailyBest,37.91
+P100,Fabric Softener 1L,Household,GoldenField,66.9
+P098,Floor Cleaner 1L,Household,GoldenField,44.6
+P094,Laundry Powder 2kg,Household,DailyBest,133.8
+P102,Paper Towels 2pk,Household,FreshCo,50.17
+P097,Sponges 3pk,Household,DailyBest,16.73
+P095,Tissues Box,Household,Al Waha,20.07
+P096,Trash Bags,Household,FreshCo,27.88
+P044,Cooking Oil 1L,Oils & Sauces,HomeChoice,80.28
+P053,Hot Sauce 150ml,Oils & Sauces,FreshCo,24.53
+P050,Ketchup 340g,Oils & Sauces,FreshCo,31.22
+P049,Mayonnaise 400g,Oils & Sauces,Baraka,46.83
+P051,Mustard 200g,Oils & Sauces,Baraka,27.88
+P048,Olive Oil 500ml,Oils & Sauces,DailyBest,167.25
+P055,Pickles Jar,Oils & Sauces,DailyBest,35.68
+P045,Sunflower Oil 2L,Oils & Sauces,Al Waha,150.53
+P054,Tahini 400g,Oils & Sauces,DailyBest,78.05
+P047,Tomato Paste 200g,Oils & Sauces,Baraka,15.61
+P046,Tomato Sauce 360g,Oils & Sauces,Nile Select,17.84
+P052,Vinegar 500ml,Oils & Sauces,HomeChoice,15.61
+P106,Body Soap 4pk,Personal Care,FreshCo,53.52
+P107,Deodorant,Personal Care,Baraka,61.33
+P111,Face Wash,Personal Care,GoldenField,100.35
+P110,Hair Conditioner 400ml,Personal Care,Nile Select,89.2
+P109,Hand Wash 350ml,Personal Care,Nile Select,35.68
+P112,Razor Pack,Personal Care,Nile Select,78.05
+P113,Sanitary Pads,Personal Care,GoldenField,44.6
+P104,Shampoo 400ml,Personal Care,DailyBest,83.62
+P108,Toothbrush 2pk,Personal Care,DailyBest,31.22
+P105,Toothpaste 100ml,Personal Care,Baraka,33.45
+P075,Candy Bag,Snacks,DailyBest,20.07
+P068,Chips Large,Snacks,HomeChoice,22.3
+P069,Chips Small,Snacks,HomeChoice,8.92
+P070,Chocolate Bar,Snacks,Nile Select,15.61
+P073,Cookies Box,Snacks,Nile Select,28.99
+P078,Dark Chocolate,Snacks,FreshCo,39.02
+P076,Dates 500g,Snacks,Nile Select,61.33
+P071,Nuts Mix 250g,Snacks,Nile Select,69.13
+P072,Popcorn,Snacks,FreshCo,13.38
+P077,Pretzels,Snacks,Al Waha,24.53
+P074,Wafer Pack,Snacks,DailyBest,11.15
+P118,Black Pepper 50g,Sugar & Spices,Nile Select,16.73
+P120,Cinnamon 50g,Sugar & Spices,Nile Select,15.61
+P122,Cocoa Powder 100g,Sugar & Spices,DailyBest,33.45
+P119,Cumin 50g,Sugar & Spices,Baraka,13.38
+P117,Honey 250g,Sugar & Spices,Baraka,78.05
+P121,Jam 340g,Sugar & Spices,Baraka,39.02
+P115,Salt 700g,Sugar & Spices,FreshCo,8.92
+P116,Spice Mix,Sugar & Spices,Baraka,13.38
+P114,Sugar 1kg,Sugar & Spices,Al Waha,33.45
+P123,Vanilla 10g,Sugar & Spices,HomeChoice,8.92
