@@ -1,374 +1,731 @@
 # 🛒 Retail Intelligence & Market Basket Analysis Platform
- 
-> An end-to-end business analytics decision platform for a supermarket-style retailer: reproducible data pipeline, customer segmentation, market basket analysis, a hybrid product recommender, and an interactive dashboard that ends in a table of actionable recommendations.
- 
-![Program](https://img.shields.io/badge/Program-DEPI-1A237E)
-![Track](https://img.shields.io/badge/Track-Data%20Scientist-00838F)
-![Status](https://img.shields.io/badge/Status-Implementation%20in%20progress-blue)
-![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB)
-![Method](https://img.shields.io/badge/Methodology-CRISP--DM-5C6BC0)
-![Tools](https://img.shields.io/badge/Tools-Free%20%26%20open--source-success)
- 
-**Program:** DEPI | Digital Egypt Pioneers Initiative
-**Project type:** Capstone, End-to-End Business Analytics Decision Platform
-**Supervisor:** Sara Ashraf
-**Version:** 1.1 (16 November 2026)
- 
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24,30&height=230&section=header&text=Retail%20Intelligence&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=From%20Retail%20Data%20to%20Intelligent%20Decisions&descSize=18&descAlignY=58" width="100%" alt="Retail Intelligence"/>
+
+**An End-to-End Data Science & AI Platform for Retail Intelligence**
+
+Turning transaction data into customer insights, product relationships, personalized recommendations, and actionable retail decisions.
+
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Scikit--Learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Gemini](https://img.shields.io/badge/Google%20Gemini-Vision-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-Application-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+
+![DEPI](https://img.shields.io/badge/DEPI-Digital%20Egypt%20Pioneers%20Initiative-F0A500?style=for-the-badge)
+![BFCAI](https://img.shields.io/badge/Made%20by-BFCAI%20Team-1F6FEB?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Capstone%20Development-2EA043?style=for-the-badge)
+
+[📊 Analytics](#-project-overview) · [🧠 Machine Learning](#-machine-learning--intelligence) · [🛍️ RetailDeep](#-retaildeep-assistant) · [🏗️ Architecture](#️-system-architecture) · [🚀 Setup](#-getting-started) · [👥 Team](#-team)
+
+</div>
+
 ---
- 
-## 📑 Table of Contents
- 
-- [Overview](#-overview)
-- [Current Progress](#-current-progress)
-- [Problem Statement](#-problem-statement)
-- [Objectives](#-objectives)
-- [Architecture](#-architecture)
-- [Modules](#-modules)
-- [Data](#-data)
-- [Evaluation & KPIs](#-evaluation--kpis)
-- [Requirements Summary](#-requirements-summary)
-- [Tech Stack](#-tech-stack)
-- [Repository Structure](#-repository-structure)
-- [Getting Started](#-getting-started)
-- [Project Plan & Milestones](#-project-plan--milestones)
-- [Team](#-team)
-- [Engineering Workflow](#-engineering-workflow)
-- [Risks](#-key-risks)
-- [Documentation](#-documentation)
-- [Privacy & License](#-privacy--license)
+
+## 📌 Project Overview
+
+**Retail Intelligence & Market Basket Analysis Platform** is an end-to-end retail analytics and AI solution designed to transform supermarket transaction data into actionable business intelligence.
+
+The project combines data engineering, exploratory analysis, customer segmentation, market basket analysis, recommendation systems, computer vision, and interactive business intelligence dashboards.
+
+Rather than stopping at descriptive analytics, the platform connects analytical findings to practical retail applications.
+
+### The platform answers four key business questions:
+
+| Business Question | Solution |
+|:---|:---|
+| Who are our customers? | RFM Analysis & Customer Segmentation |
+| What products are purchased together? | Market Basket Analysis & FP-Growth |
+| What should we recommend to customers? | Hybrid Recommendation System |
+| How can these insights be used in practice? | RetailDeep Assistant & Power BI Dashboard |
+
+### Project Components
+
+| Component | Purpose |
+|:---|:---|
+| **Core Analytics Platform** | Data preparation, EDA, KPIs, and customer intelligence |
+| **Customer Segmentation** | Identifying meaningful customer groups using clustering |
+| **Market Basket Analysis** | Discovering product associations and frequent itemsets |
+| **Hybrid Recommender** | Generating and ranking personalized product recommendations |
+| **RetailDeep Assistant** | Interactive product recognition, bundles, and smart offers |
+| **Power BI Dashboard** | Communicating business insights through interactive reports |
+
 ---
- 
-## 📌 Overview
- 
-The platform turns raw sales transactions into three connected insights and delivers them through one interactive dashboard and one recommendations table:
- 
-| Insight | Type | Answers |
-|---|---|---|
-| **Customer segmentation** | Unsupervised learning | Who are the best customers? Who stopped buying? Does behavior differ between segments? |
-| **Market basket analysis** | Association rule mining | Which products are bought together? Which bundles are possible? |
-| **Recommender system** | Hybrid recommender | What should we suggest for this basket or this customer? |
- 
-All three modules read the **same cleaned dataset**, and every cleaning decision is logged with before/after counts so every number can be traced back to the source.
- 
-## 🚦 Current Progress
- 
-| Component | Status | Where |
-|---|---|---|
-| Data audit, cleaning decisions and pre-ML EDA | ✅ Done | `notebooks/EDA.ipynb`, `docs/EDA_Report.pdf` |
-| Feature tables handed to the ML team (RFM, log + scaled) | ✅ Done | `customer_features_rfm.csv`, `customer_features_rfm_scaled.csv`, `EDA_QA_Audit.csv`, `docs/ML_Handoff.pdf` |
-| Customer segmentation (K-Means, K = 8) | ✅ Done (ML team) | `notebooks/Final.ipynb`, `data.csv` |
-| Post-ML EDA: segment profiling and business reading | ✅ Done | `notebooks/EDA_After_ML.ipynb`, `segment_summary.csv`, `customer_segments.csv` |
-| Market basket: pair-level support, confidence (both directions), lift | ✅ Done (EDA level) | `product_recommendations.csv` |
-| Full FP-Growth module and hybrid recommender with time-based evaluation | 🔄 In progress | — |
-| Product recognition demo (camera → product → what to buy with it + offers) | 🧪 Prototype | `demo/` |
-| Power BI dashboard (5 pages, star schema) | 🔄 In progress | `dashboard/PowerBI_README.md` |
-| Testing, final report, presentation, infographic | ⏳ Pending | — |
- 
-**Headline findings so far** (about 815 thousand lines, 2024–2025; revenue after discount ≈ 75.1M, profit ≈ 20.1M):
- 
-- **Champions** are the largest revenue segment (about 19M in 2025).
-- **At Risk Customers** revenue fell by **92%** from 2024 to 2025, while **Recent High Spenders** grew by **131%**.
-- Frequency and Monetary are almost the same signal (correlation 0.947), which is why scaling and log transform were applied before clustering.
-- The strongest product pair is Milk 1L with Baladi Bread (about 10.6% of invoices).
-- Weekday, channel and region show no meaningful difference between segments.
-## ❓ Problem Statement
- 
-The retailer owns thousands of purchase records but cannot answer four practical questions:
- 
-1. What do customers buy **together**?
-2. Who are the most **valuable** customers?
-3. Which products should be **recommended** to each customer?
-4. How can the **average order value** be increased?
-Decisions about shelf layout, bundles and campaigns are therefore taken without evidence. This project closes that gap.
- 
-## 🎯 Objectives
- 
-| ID | Objective | Target |
-|----|-----------|--------|
-| O1 | Documented, reproducible data pipeline (SQL schema, cleaning, validation) with an issues log | 6 Nov 2026 |
-| O2 | Customer clustering evaluated with Silhouette and bootstrap stability, every segment profiled in business language | 16 Nov 2026 |
-| O3 | FP-Growth association rules with support, confidence and lift for every rule | 16 Nov 2026 |
-| O4 | Recommender compared with a popularity baseline on a time-based hold-out | 25 Nov 2026 |
-| O5 | Interactive dashboard answering all four groups of stakeholder questions | 27 Nov 2026 |
-| O6 | Recommendations table (priority, owner, metric), final report, presentation and infographic | 4 Dec 2026 |
- 
-## 🏗️ Architecture
- 
+
+## 🎯 Project Objectives
+
+1. Build a reproducible data preparation and validation pipeline.
+2. Understand retail performance through exploratory data analysis and business KPIs.
+3. Segment customers using RFM features and clustering techniques.
+4. Discover meaningful product associations using FP-Growth.
+5. Develop and evaluate a hybrid product recommendation system.
+6. Connect analytical outputs to a practical AI-powered retail application.
+7. Build an interactive Power BI dashboard for business stakeholders.
+8. Translate analytical findings into measurable business recommendations.
+
+---
+
+## 📊 Dataset Overview
+
+**Dataset:** [Retail Data on Kaggle](https://www.kaggle.com/datasets/tawfiqakram/retail-data) by `tawfiqakram`.
+
+The project uses supermarket-style retail transaction data covering two years of sales activity.
+
+| Attribute | Value |
+|:---|---:|
+| Transaction Lines | ~814,912 |
+| Customers | ~7,000 |
+| Products | 133 |
+| Categories | 13 |
+| Stores | 25 |
+| Time Period | January 2024 – December 2025 |
+| Revenue After Discounts | ~75.1M |
+| Profit | ~20.1M |
+
+*Figures represent the current dataset analysis and may be refined during final validation.*
+
+### Main Data Entities
+
+- **Transactions:** Sales records, quantities, prices, discounts, dates, and customer/product references.
+- **Customers:** Customer attributes and identifiers.
+- **Products:** Product names, categories, and product attributes.
+- **Stores:** Store identifiers and geographical information.
+
+---
+
+## 🧹 Data Engineering & Preparation
+
+A structured data preparation workflow was developed to improve data reliability before analysis and modeling.
+
+### Data Quality Checks
+
+- Duplicate transaction detection.
+- Missing key identification and recovery where possible.
+- Invalid quantity and price validation.
+- Discount validation.
+- Inconsistent category and product labels.
+- Mixed date-format handling.
+- Referential integrity checks.
+- Data issues logging and auditing.
+
+### Data Preparation Outputs
+
+- Cleaned transaction data.
+- Validated customer and product references.
+- Customer feature tables.
+- Data quality audit files.
+- Documented cleaning decisions.
+
+The pipeline is designed to maintain reproducibility and traceability across analytical stages.
+
+---
+
+## 📈 Exploratory Data Analysis
+
+The EDA stage focuses on understanding overall retail performance and identifying meaningful patterns.
+
+### Business KPIs
+
+- Total Revenue.
+- Total Transactions.
+- Average Order Value (AOV).
+- Average Items per Basket.
+- Discount Share.
+- Profit and Margin.
+- Monthly and Daily Sales Trends.
+- Product and Category Performance.
+- Store and Regional Performance.
+
+### Key Findings
+
+- Champions represent one of the strongest revenue-generating customer segments.
+- At Risk Customers experienced a significant revenue decline between 2024 and 2025.
+- Recent High Spenders showed substantial growth.
+- Frequency and Monetary Value demonstrated a strong positive correlation.
+- Weekday, channel, and region did not show meaningful differences between customer segments in the current analysis.
+
+---
+
+## 👥 Customer Segmentation
+
+Customer segmentation identifies groups with similar purchasing behavior to support targeted marketing and retention strategies.
+
+### RFM-Based Feature Engineering
+
+The segmentation process uses customer-level behavioral features, including:
+
+| Feature | Description |
+|:---|:---|
+| Recency | Time since the customer's last purchase |
+| Frequency | Number of purchases |
+| Monetary | Total customer spending |
+| Average Invoice | Average transaction value |
+| Visit Gap | Average time between purchases |
+| Discount Share | Customer discount behavior |
+| Items per Basket | Average purchased items |
+| Tenure | Customer relationship duration |
+
+### Modeling Workflow
+
+1. Build customer-level RFM features.
+2. Apply log transformation to reduce skewness.
+3. Standardize numerical features.
+4. Evaluate clustering configurations.
+5. Apply K-Means clustering.
+6. Profile and interpret resulting segments.
+7. Translate segment behavior into business actions.
+
+**Selected configuration:** K-Means with K = 8.
+
+### Evaluation
+
+- Silhouette Score.
+- Bootstrap Stability using Adjusted Rand Index (ARI).
+- Segment-level behavioral profiling.
+- Business interpretability.
+
+### Expected Business Applications
+
+- Customer retention campaigns.
+- Targeted promotions.
+- VIP customer strategies.
+- Re-engagement campaigns.
+- Customer-specific marketing decisions.
+
+---
+
+## 🧠 Machine Learning & Intelligence
+
+This section contains the analytical intelligence powering the recommendation and retail application layers.
+
+### 1. Market Basket Analysis — FP-Growth
+
+The Market Basket Analysis module identifies products frequently purchased together.
+
+**FP-Growth** is used to discover frequent itemsets without generating the large candidate sets associated with traditional Apriori approaches.
+
+#### Workflow
+
+1. Prepare transaction baskets.
+2. Transform basket data into a one-hot encoded representation.
+3. Mine frequent itemsets using FP-Growth.
+4. Generate association rules.
+5. Calculate rule metrics.
+6. Rank and filter meaningful product relationships.
+
+#### Association Rule Metrics
+
+| Metric | Meaning |
+|:---|:---|
+| Support | How frequently an itemset appears in all transactions |
+| Confidence | Probability of purchasing the consequent given the antecedent |
+| Lift | Strength of the association compared with independent purchasing |
+
+#### Outputs
+
+- Frequent itemsets.
+- Association rules.
+- Product relationships.
+- Bundle candidates.
+- Product recommendation datasets.
+
+The resulting product insights are consumed by both the recommendation system and RetailDeep Assistant.
+
+### 2. Hybrid Product Recommendation System
+
+The recommendation system combines multiple recommendation strategies to generate relevant product suggestions.
+
+#### Recommendation Components
+
+| Component | Role |
+|:---|:---|
+| Popularity-Based | Provides a reliable baseline and fallback |
+| Co-occurrence | Identifies products frequently purchased together |
+| Item-Based Collaborative Filtering | Uses item similarity based on customer purchasing behavior |
+| FP-Growth Insights | Provides association-based recommendation signals |
+| LightGBM Re-ranking | Ranks candidate products using learned relevance patterns |
+
+#### Recommendation Workflow
+
+1. Generate candidate products from multiple sources.
+2. Combine candidate recommendation signals.
+3. Apply feature engineering.
+4. Rank candidates using LightGBM.
+5. Return Top-N recommendations.
+6. Exclude products already present in the current basket.
+
+#### Supported Scenarios
+
+- Basket-based recommendations.
+- Customer-history recommendations.
+- Segment-aware recommendations.
+- Cold-start fallback using popularity and available product signals.
+
+#### Evaluation Strategy
+
+The system uses **time-based evaluation** to simulate real-world recommendation scenarios.
+
+- Train using historical transactions.
+- Validate using a later time period.
+- Test using an unseen future period.
+- Prevent information leakage from future transactions.
+- Compare performance against a popularity baseline.
+
+**Evaluation Metrics:**
+
+- Hit@K.
+- Precision@K.
+- Recall@K.
+- NDCG@K.
+
+Target improvements are defined against the popularity baseline and will be reported using actual evaluation results.
+
+---
+
+## 🛍️ RetailDeep Assistant
+
+<details>
+<summary><b>Explore the interactive AI-powered retail application</b></summary>
+
+**RetailDeep Assistant** is the application layer of the platform. It transforms product intelligence and market basket insights into a practical shopping experience.
+
+It connects product recognition with product relationships, smart bundles, and conditional personalized offers.
+
+**Technology:** Streamlit · Gemini Vision · Pandas · Python
+
+### Main Features
+
+| Feature | Description |
+|:---|:---|
+| Product Selection | Search and select products manually without an API call |
+| Camera Recognition | Recognize products using Gemini Vision |
+| Image Upload | Identify products from uploaded images |
+| Bought Together | Display frequently associated products |
+| Smart Bundles | Present product bundles with regular price, offer price, and savings |
+| Just-for-you Offers | Suggest one related product with a conditional discount |
+| Category Insights | Show product ranking and alternative products |
+
+### Product Recognition
+
+The application accepts a camera image or uploaded photo and uses Gemini Vision to identify the nearest catalogue product.
+
+The recognition workflow includes:
+
+- Catalogue matching.
+- Confidence-based decision handling.
+- Bounding-box visualization.
+- Fast-model-first execution with a stronger-model fallback.
+- Cached recognition results.
+
+Low-confidence or unclear recognition results are not presented as confirmed product matches.
+
+### Smart Bundles
+
+The application uses prepared product relationships and pricing information to generate bundle suggestions.
+
+Bundles can include:
+
+- Product combinations.
+- Regular bundle price.
+- Offer price.
+- Customer savings.
+
+Suggested discounts are based on historical discount behavior in the dataset.
+
+### The Just-for-you Hook
+
+When a strong bundle is unavailable, the application provides an alternative personalized offer.
+
+1. Identify related product groups.
+2. Exclude near-duplicate products.
+3. Rank candidates using relatedness and popularity.
+4. Display the top three alternatives.
+5. Allow the shopper to select one product.
+6. Apply a conditional discount when purchased with the original product.
+
+This approach encourages larger baskets while keeping the discount configurable.
+
+### Application Details
+
+- Arabic RTL interface.
+- Dark and light friendly cards.
+- Product images with emoji fallback.
+- One-hour recognition cache.
+- Manual selection mode without Gemini API usage.
+
+**Repository:** RetailDeep Assistant application files are maintained within the project repository.
+
+</details>
+
+---
+
+## 🏗️ System Architecture
+
+The platform follows a modular architecture that separates data processing, machine learning, application logic, and business intelligence.
+
 ```mermaid
-flowchart LR
-    A[Raw CSV files<br/>transactions, customers,<br/>products, stores] --> B[(SQL database)]
-    B --> C[Cleaning & validation<br/>+ issues log]
-    C --> D[Clean dataset<br/>CSV / Parquet]
-    D --> E[EDA & KPIs]
-    D --> F[Customer segmentation<br/>RFM + clustering]
-    D --> G[Market basket<br/>FP-Growth rules]
-    D --> H[Recommender<br/>hybrid + re-ranking]
-    G -.optional.-> L[Product recognition demo<br/>camera + Gemini]
-    E --> I[Interactive dashboard]
-    F --> I
-    G --> I
-    H --> I
-    I --> J[Recommendations table<br/>priority · owner · metric]
-    L -.uses.-> G
-    H -.optional.-> K[FastAPI endpoint]
+flowchart TD
+    A[Raw Retail Data] --> B[Data Ingestion & SQL]
+    B --> C[Cleaning & Validation]
+    C --> D[Clean Transaction Data]
+
+    D --> E[Exploratory Data Analysis]
+    D --> F[RFM Feature Engineering]
+    D --> G[Market Basket Preparation]
+
+    F --> H[Customer Segmentation]
+    G --> I[FP-Growth]
+    D --> J[Hybrid Recommendation System]
+
+    I --> J
+    H --> J
+
+    I --> K[Product Insights & Bundle Data]
+    J --> L[Recommendation Outputs]
+
+    K --> M[RetailDeep Assistant]
+    L --> N[Recommendation Insights]
+
+    M --> O[Product Recognition & Smart Offers]
+    E --> P[Power BI Dashboard]
+    H --> P
+    I --> P
+    J --> P
+
+    O --> Q[Actionable Retail Decisions]
+    P --> Q
 ```
- 
-## 🧩 Modules
- 
-### 1. Data ingestion & cleaning
-- Loads raw CSVs into SQL tables **without changing raw values** (all fields read as text first).
-- Detects and handles duplicates, missing keys, invalid quantities, price outliers, invalid discounts, inconsistent labels and mixed date formats.
-- Recovers missing values from the same transaction or reference tables where possible; drops records only when recovery is impossible.
-- Validates foreign keys (customer, product, store) and reports orphan records.
-- Writes an **issues log**: issue, rows affected, decision, reason.
-### 2. EDA & business KPIs
-Revenue, number of transactions, average order value, items per basket, discount share and margin, with trends by month, weekday, store, region and category, plus rankings of products and categories by revenue and quantity.
- 
-### 3. Customer segmentation
-- **Behavior features:** recency, frequency, monetary value, average order value, visit gap, discount share, items per basket, tenure.
-- Goes beyond classic RFM so discount-driven customers can be separated from others.
-- Clustering with at least two configurations, evaluated with **Silhouette** and **bootstrap stability (Adjusted Rand Index ≥ 0.80)**.
-- Every segment gets a **name, profile and recommended action**; customer lists are exportable (for example the lapsed segment for win-back campaigns).
-### 4. Market basket analysis
-- **FP-Growth** with configurable minimum support, confidence and lift (preferred over Apriori for speed on large transaction tables).
-- Each rule is shown with support, confidence, lift and a **plain-language reading**.
-- Rules are ranked by **lift**, not only confidence, to avoid rules that look strong only because a product is popular.
-- Bundle candidates are derived from the strongest rules.
-### 5. Recommender system
-- **Hybrid model:** popularity and co-occurrence baselines, item-based collaborative filtering (cosine similarity), then a **LightGBM re-ranker**.
-- Top-N products for a basket, **excluding products already in the basket**, each with a short reason.
-- Optional recommendations for a specific customer id using history and segment.
-- Cold-start fallback: empty basket uses customer history, segment and popularity.
-- Optional documented **API endpoint** (FastAPI).
-### 6. Dashboard & recommendations table
-Built in **Power BI** on a star schema (`FactSales` with `DimCustomer`, `DimProduct`, `DimStore` and a `Calendar` table). Five pages (Overview, Customer Segments, Products, Stores & Channels, Discounts & Demographics), each with two slicers, five cards and five charts, plus date, store, category and segment filters and CSV export. Build steps, DAX measures and visual settings are in `dashboard/PowerBI_README.md`. The final recommendations table lists **at least five actions**, each with an owner team, a priority and a metric to monitor.
- 
-### 7. Product recognition demo (optional, deep learning)
-A small Gradio app: the user shows a product to the camera, the app draws a box around it, names the closest product in our catalogue, suggests what is usually bought with it (from the basket rules, confidence ≥ 0.2) and shows whether it is usually sold with a discount.
-- **Recognition:** the image and the product catalogue are sent to a Gemini vision model, which returns the closest product and a bounding box. No product in the image gives "no product"; an unrecognised product or low confidence gives a red box and "unknown", never a guess.
-- **Alternative without an API:** CLIP embeddings of reference photos (`products/<name>/`) plus OWL-ViT for the box.
-- Suggestions and offers come from sales data (`product_recommendations.csv`, `product_offers.csv`), not from the image.
-- Current limits: prototype only, no measured accuracy yet; the free API tier has rate limits and images are sent to the provider.
-## 🗂️ Data
- 
-| Item | Value |
-|---|---|
-| Dataset | Retail_Data |
-| Publisher | tawfiqakram (Kaggle) |
-| Source | https://www.kaggle.com/datasets/tawfiqakram/retail-data |
-| Date accessed | 16 October 2026 |
-| Licence | **To be confirmed** (not stated on the dataset page) |
-| Working size | 814,912 transaction lines, 7,000 customers, 133 products, 13 categories, 25 stores (plus lines with no store recorded) |
-| Period | 1 January 2024 to 31 December 2025 |
- 
-The dataset contains realistic quality problems (missing values, duplicates, inconsistent formats, outliers) that the pipeline must handle.
- 
-**Tables**
- 
-| Table | Main fields |
-|---|---|
-| `transactions` | line id, transaction (invoice) id, customer id, date, product id, product name, category, quantity, unit price, discount, store, payment method, channel |
-| `customers` | customer id, city, age group, gender, birth year, join date, loyalty member, preferred payment |
-| `products` | product id, name, category, brand, unit, cost price, list price, perishable flag |
-| `stores` | store id, name, city, area, region, size class, opening date |
- 
-## 📊 Evaluation & KPIs
- 
-Evaluation is **time-based**: train on the past, test on a later period, with features built only from the past to prevent data leakage.
- 
-| Area | KPI | Target |
-|---|---|---|
-| Data quality | Key completeness after cleaning | ≥ 99% |
-| Data quality | Exact duplicate rows after cleaning | 0 |
-| Data quality | Issues-log coverage | 100% |
-| Segmentation | Stability (ARI on bootstrap samples) | ≥ 0.80 |
-| Segmentation | Segments with name, profile and action | 100% |
-| Rules | Rules with lift ≥ 2 reviewed manually | ≥ 10 |
-| Recommender | Hit@10 vs popularity baseline | ≥ 1.25× |
-| Recommender | Hit@1 vs popularity baseline | ≥ 2× |
-| Performance | Dashboard page render time | ≤ 5 s |
-| Performance | One basket recommendation (local) | ≤ 1 s |
-| Delivery | Business questions answered by the dashboard | 100% |
-| Delivery | Test pass rate | ≥ 90% |
-| Delivery | Actionable recommendations (priority, owner, metric) | ≥ 5 |
-| Delivery | Milestones delivered on time | 4 of 4 |
- 
-## ✅ Requirements Summary
- 
-| Category | Count | Highlights |
-|---|---|---|
-| User stories | 15 | 11 Must, 2 Should, 2 Could |
-| Functional requirements | 26 | 17 Must, 8 Should, 1 Could, across 7 modules |
-| Non-functional requirements | 17 | Performance, scalability, security & privacy, reliability, portability, explainability |
- 
-Key non-functional targets:
- 
-- **Performance:** full pipeline in under 15 minutes on an 8 GB RAM laptop.
-- **Scalability:** handles at least 1 million transaction lines (chunks or efficient formats).
-- **Reproducibility:** same input and seed produce the same outputs.
-- **Security & privacy:** anonymised identifiers only; no credentials committed; inputs validated.
-- **Portability:** Windows and Linux, Python 3.10+, `requirements.txt`.
-- **Explainability:** every segment, rule and recommendation is explainable in business terms.
-Out of scope: real-time point-of-sale integration, live A/B experiments, price optimisation, demand forecasting, mobile app and personal identifying information.
- 
-## 🧰 Tech Stack
- 
-| Layer | Tools |
-|---|---|
-| Language & analysis | Python, pandas, NumPy, scikit-learn, matplotlib, Jupyter |
-| Mining & ML | mlxtend (FP-Growth), LightGBM |
-| Data | SQL database (SQLite or PostgreSQL, to be confirmed in design), CSV, Parquet |
-| Dashboard | Power BI (star schema) |
-| Product demo | Gradio, Gemini API (or CLIP + OWL-ViT with transformers/PyTorch) |
-| Collaboration | Git & GitHub (branches, pull requests, issues) |
-| Optional | MLflow, FastAPI, Docker, GitHub Actions |
- 
-## 📁 Repository Structure
- 
-```
+
+### Architecture Layers
+
+| Layer | Responsibility |
+|:---|:---|
+| Data Layer | Raw transactions, customers, products, and stores |
+| Processing Layer | Cleaning, validation, and feature engineering |
+| Analytics Layer | EDA, KPIs, and customer profiling |
+| Intelligence Layer | Clustering, FP-Growth, and hybrid recommendations |
+| Application Layer | RetailDeep Assistant |
+| Visualization Layer | Power BI dashboards |
+| Business Layer | Offers, bundles, and actionable recommendations |
+
+### How the Two Repositories Work Together
+
+The main platform produces analytical outputs, while RetailDeep consumes prepared product insights to serve an interactive user experience.
+
+- **Main Platform:** Data engineering, customer intelligence, FP-Growth, recommendation modeling, and BI.
+- **RetailDeep Assistant:** Product recognition, catalogue matching, frequently bought together, bundles, and conditional offers.
+
+---
+
+## 📊 Power BI Dashboard
+
+The dashboard is designed to communicate business insights through a structured star schema.
+
+### Data Model
+
+- FactSales
+- DimCustomer
+- DimProduct
+- DimStore
+- Calendar
+
+### Dashboard Pages
+
+| Page | Focus |
+|:---|:---|
+| Overview | Overall retail performance |
+| Customer Segments | Customer behavior and segment profiles |
+| Products | Product and category performance |
+| Stores & Channels | Geographical and channel analysis |
+| Discounts & Demographics | Discount behavior and customer characteristics |
+
+### Dashboard Capabilities
+
+- Interactive date and category filters.
+- Store and segment analysis.
+- KPI cards and trend visualizations.
+- Product performance comparisons.
+- Customer segmentation insights.
+- Exportable business insights.
+
+---
+
+## 💡 Business Recommendations
+
+The platform is designed to support decisions such as:
+
+| Insight | Potential Action | Business Goal |
+|:---|:---|:---|
+| High-value loyal customers | VIP rewards and exclusive offers | Retention |
+| Declining At Risk segment | Targeted win-back campaigns | Reduce churn |
+| Strong product associations | Bundle promotions | Increase basket size |
+| Popular related products | Cross-selling offers | Increase revenue |
+| Recent high spenders | Personalized engagement | Improve loyalty |
+| Low-performing products | Review pricing and promotions | Improve performance |
+
+---
+
+## 📏 Evaluation & Success Criteria
+
+The project uses measurable criteria to assess data quality, model performance, and business usability.
+
+| Area | Evaluation |
+|:---|:---|
+| Data Quality | Completeness, duplicates, validation, and issues logging |
+| Segmentation | Silhouette Score and bootstrap stability |
+| Association Rules | Support, Confidence, Lift, and manual review |
+| Recommendation | Hit@K, Precision@K, Recall@K, NDCG@K |
+| Recommendation Baseline | Comparison against popularity-based recommendations |
+| Dashboard | Rendering performance and stakeholder usability |
+| Application | Recognition handling and recommendation workflow |
+
+Performance targets are treated as evaluation goals, not achieved results, until supported by measured outputs.
+
+---
+
+## 🧰 Technology Stack
+
+### Data Science & Analytics
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Jupyter Notebook
+
+### Machine Learning
+
+- K-Means Clustering
+- RFM Analysis
+- FP-Growth
+- Association Rules
+- Collaborative Filtering
+- Cosine Similarity
+- LightGBM
+
+### AI Application
+
+- Streamlit
+- Google Gemini Vision API
+- Pillow
+- Pydantic
+
+### Data & Storage
+
+- SQL
+- SQLite / PostgreSQL
+- CSV
+- Parquet
+
+### Business Intelligence
+
+- Power BI
+- DAX
+- Power Query
+- Star Schema
+
+### Development & Collaboration
+
+- Git
+- GitHub
+- Jupyter
+- VS Code
+
+---
+
+## 📁 Project Structure
+
+```text
 .
 ├── README.md
-├── docs/                          # Project documentation
-│   ├── DEPI_Planning_Documents_Retail_Intelligence_Platform.pdf
+│
+├── data/
+│   ├── raw/
+│   ├── processed/
+│   └── features/
+│
+├── docs/
 │   ├── EDA_Report.pdf
-│   └── ML_Handoff.pdf
-├── data/                          # Raw and cleaned data + data dictionary
-├── sql/                           # Schema, loading and KPI check queries (to be added)
+│   ├── ML_Handoff.pdf
+│   └── ...
+│
 ├── notebooks/
-│   ├── EDA.ipynb                  # Pre-ML EDA and feature preparation
-│   ├── Final.ipynb                # Clustering (ML team)
-│   └── EDA_After_ML.ipynb         # Segment profiling after clustering
-├── src/                           # Pipeline source code (to be added)
-├── dashboard/
-│   └── PowerBI_README.md          # Power BI build guide (star schema, DAX, 5 pages)
-├── demo/                          # Product recognition demo
-│   ├── camera_app_gemini.py
+│   ├── EDA.ipynb
+│   ├── Final.ipynb
+│   └── EDA_After_ML.ipynb
+│
+├── sql/
+│
+├── src/
+│   ├── data/
+│   ├── features/
+│   ├── segmentation/
+│   ├── market_basket/
+│   ├── recommender/
+│   └── evaluation/
+│
+├── RetailDeep/
+│   ├── app.py
+│   ├── matcher.py
 │   ├── recommend.py
+│   ├── related.py
+│   ├── build_catalog.py
+│   ├── build_bundles.py
+│   ├── products_catalog.csv
+│   ├── product_bundles.csv
 │   ├── product_recommendations.csv
-│   └── product_offers.csv
-├── tests/                         # Test cases (to be added)
-└── requirements.txt               # (to be added)
+│   ├── product_offers.csv
+│   ├── images/
+│   └── requirements.txt
+│
+├── dashboard/
+│   └── PowerBI_README.md
+│
+├── tests/
+│
+└── requirements.txt
 ```
- 
+
+*Illustrative structure: directory names should be aligned with the actual repository layout.*
+
+---
+
 ## 🚀 Getting Started
- 
-> ⚠️ Implementation is in progress. The pipeline commands will be finalized at the integration phase (23–30 Nov); the notebooks and the demo can already be run as described below.
- 
-**Prerequisites**
- 
-- Python 3.10 or later
-- Git
-- 8 GB RAM is enough for the working dataset
-**Installation**
- 
+
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/SherifAzb/End-to-End-Business-Analytics-Decision-Platform.git
+
 cd End-to-End-Business-Analytics-Decision-Platform
-python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
-pip install -r requirements.txt  # file will be added during implementation
 ```
- 
-**Data**
- 
-Download the dataset from [Kaggle](https://www.kaggle.com/datasets/tawfiqakram/retail-data) and place the CSV files in `data/raw/`.
- 
-**Run**
- 
-The pipeline will run end-to-end from documented commands with fixed random seeds (cleaning → segmentation → rules → recommender), writing the clean dataset, the issues log and the result tables used by the dashboard. Exact commands will be added after implementation.
- 
-**Run the product recognition demo**
- 
+
+### 2. Create a virtual environment
+
 ```bash
-cd demo
-pip install google-genai gradio pillow pandas pydantic
-# create gemini_key.txt next to the script with your own key from https://aistudio.google.com/apikey
-python camera_app_gemini.py
+python -m venv .venv
 ```
- 
-Each person uses their own key. `gemini_key.txt` is listed in `.gitignore` and must never be committed.
- 
-## 🗓️ Project Plan & Milestones
- 
-| Phase | Activities | Start | End |
-|---|---|---|---|
-| A. Planning documents | Planning, literature review, requirements | 8 Oct | 16 Oct |
-| B. System analysis & design | Use cases, ERD, DFD, UML, architecture, wireframes | 17 Oct | 6 Nov |
-| C1. Data pipeline | SQL schema, loading, cleaning, validation, issues log | 19 Oct | 6 Nov |
-| C2. EDA & KPIs | Descriptive analysis, trends, business KPIs | 26 Oct | 13 Nov |
-| C3. Segmentation & market basket | Clustering, profiling, FP-Growth rules | 2 Nov | 16 Nov |
-| C4. Recommender | Baselines, hybrid model, time-based evaluation | 9 Nov | 25 Nov |
-| C5. Dashboard | KPIs, segments, rules, recommendations pages | 9 Nov | 27 Nov |
-| C6. Integration & freeze | README, repo clean-up, final source code | 23 Nov | 30 Nov |
-| D1. Testing & QA | Test plan, test cases, automated tests, bug reports | 9 Nov | 1 Dec |
-| D2. Final delivery | Final report, presentation, infographic, user manual | 23 Nov | 4 Dec |
-| E. Optional deployment | API, containers, CI/CD, hosting | 16 Nov | 27 Nov |
- 
-| Milestone | Date | Exit criteria |
-|---|---|---|
-| **M1** Planning documents | 16 Oct 2026 | Planning, literature review and requirements on GitHub |
-| **M2** Design & data pipeline | 6 Nov 2026 | Design diagrams complete; cleaned dataset from one script; issues log complete |
-| **M3** Implementation complete | 30 Nov 2026 | Models evaluated; dashboard working; README lets another person run everything; source frozen |
-| **M4** Final delivery | 4 Dec 2026 | Test report, user manual, technical documentation, presentation, infographic |
- 
+
+**Windows:**
+
+```powershell
+.venv\Scripts\activate
+```
+
+**Linux / macOS:**
+
+```bash
+source .venv/bin/activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Explore the analytical notebooks
+
+Start with the EDA notebook, then explore the customer segmentation and post-ML analysis notebooks.
+
+### 5. Run RetailDeep Assistant
+
+Navigate to the actual RetailDeep application directory, install its dependencies, configure the Gemini API key, and launch:
+
+```bash
+streamlit run app.py
+```
+
+The manual product-selection mode does not require Gemini. Camera and image-upload recognition require a configured Gemini API key.
+
+**Security:** Never commit API keys or secret files to GitHub.
+
+---
+
+## 📍 Current Project Progress
+
+| Module | Status |
+|:---|:---:|
+| Data Audit & Cleaning | ✅ Done |
+| Exploratory Data Analysis | ✅ Done |
+| RFM Feature Engineering | ✅ Done |
+| Customer Segmentation (K-Means, K=8) | ✅ Done |
+| Post-ML Segment Profiling | ✅ Done |
+| Market Basket EDA | ✅ Done |
+| Full FP-Growth Module | ✅ Done |
+| Hybrid Recommender | ✅ Done |
+| Time-Based Recommendation Evaluation | ✅ Done |
+| RetailDeep Assistant Prototype | ✅ Prototype |
+| Power BI Dashboard | 🔄 In Progress |
+| Final Integration & QA | ⏳ Pending |
+| Final Report & Presentation | ⏳ Pending |
+
+---
+
+## 🗓️ Project Methodology
+
+The project follows the **CRISP-DM** methodology:
+
+1. Business Understanding.
+2. Data Understanding.
+3. Data Preparation.
+4. Modeling.
+5. Evaluation.
+6. Deployment and Business Communication.
+
+The team uses modular development, Git branches, peer review, documented handoffs, and regular progress reviews.
+
+---
+
+## 🔐 Data Privacy & Responsible AI
+
+- Customer identifiers are treated as analytical identifiers.
+- Personal information is not intended for public exposure.
+- API keys and credentials must remain outside version control.
+- Product recognition uses catalogue matching and confidence-based handling.
+- Unclear recognition results should not be presented as confirmed matches.
+- Third-party AI services may process uploaded images according to their provider policies.
+
+---
+
+## 🔗 Project Resources
+
+| Resource | Link |
+|:---|:---|
+| Main Repository | [End-to-End Business Analytics Decision Platform](https://github.com/SherifAzb/End-to-End-Business-Analytics-Decision-Platform) |
+| Dataset | [Retail Data – Kaggle](https://www.kaggle.com/datasets/tawfiqakram/retail-data) |
+| Program | DEPI – Digital Egypt Pioneers Initiative |
+| Supervisor | Sara Ashraf |
+
+---
+
 ## 👥 Team
- 
-**Team Leader:** شريف أيمن السيد عزب
- 
-| Team members |
-|---|
-| شريف أيمن السيد عزب (Team Leader) |
-| سما داود محمد المشوخي |
-| علي محمد حسن محمد |
-| منة مجدي حسن احمد |
-| روان باسم محمد عبدالستار |
- 
-**Roles**
- 
-| Member | Role | Main responsibilities |
-|---|---|---|
-| member1 | R1: Lead + Communication | Business case, KPIs, coordination, task board, reports, recommendations table, presentation |
-| member2 | R2: Data Engineer | SQL database, loading scripts, KPI queries, clean data layer, reproducibility |
-| member3 | R3: Cleaning + EDA | Data profiling, cleaning rules, issues log, EDA notebook |
-| member4 | R4: ML + Evaluation | Behavioral features, clustering, association rules, recommender, evaluation |
-| member5 | R5: Dashboard + Deployment | Dashboard design and build, number checks against SQL, optional API and deployment |
- 
-## 🔀 Engineering Workflow
- 
-- **Methodology:** CRISP-DM in short weekly iterations, with a 45-minute weekly meeting (done, blockers, next week, milestone check).
-- **Git:** protected `main` branch; feature branches named `feat/rN-topic`; small pull requests, each reviewed by a second person (100% review coverage target).
-- **Data contract:** table and column names are agreed once and changed only with the whole team's approval.
-- **Documentation:** every decision (what was dropped, filled or capped, and why) is written in the issues log.
-- **Cross-training:** every member must be able to explain the whole project.
-## ⚠️ Key Risks
- 
-| Risk | Score | Mitigation |
-|---|---|---|
-| Data cleaning takes longer than planned and blocks modelling | 9 | Start profiling in week 1; model on a sample until clean data is ready |
-| Dataset source or licence not documented correctly | 6 | Record source, link, licence and access date in README and proposal |
-| Data leakage inflates model results | 6 | Time-based split; features from the past only; peer review of every feature |
-| Limited tool experience in the team | 6 | Learning plan per role; pair programming; backup roles |
-| Scope creep | 6 | Frozen scope; optional items start only after M3 criteria are met |
-| Dashboard numbers differ from SQL results | 6 | Single KPI definition document; numbers checked against SQL |
-| Deadline pressure before M2, M3, M4 | 6 | Finish one week before each DEPI date; prioritize must-have requirements |
- 
-Scores are probability × impact (1 to 3 each); risks scoring 6 or more are reviewed at every weekly meeting. The full register has 12 risks.
- 
-## 📚 Documentation
- 
-| Deliverable | File | Due | Status |
-|---|---|---|---|
-| Project Planning & Management, Literature Review, Requirements Gathering | [docs/DEPI_Planning_Documents_Retail_Intelligence_Platform.pdf](docs/DEPI_Planning_Documents_Retail_Intelligence_Platform.pdf) | 16 Oct 2026 | ✅ Submitted |
-| EDA report and ML handoff | [docs/EDA_Report.pdf](docs/EDA_Report.pdf), [docs/ML_Handoff.pdf](docs/ML_Handoff.pdf) | — | ✅ |
-| System Analysis & Design | _coming soon_ | 6 Nov 2026 | ⏳ |
-| Implementation | _coming soon_ | 30 Nov 2026 | ⏳ |
-| Testing, Final Presentation & Reports | _coming soon_ | 4 Dec 2026 | ⏳ |
- 
-The planning PDF contains: the project proposal and plan (Gantt, RACI, risks, KPIs), a literature review of similar solutions (Apriori, FP-Growth, RFM, Instacart, Online Retail II, collaborative filtering, learning to rank, Amazon Personalize), and the full requirements set (stakeholders, user stories, use cases, functional and non-functional requirements, traceability matrix).
- 
-## 🔒 Privacy & License
- 
-- Only **anonymised identifiers** are stored in this repository. No names, phone numbers or addresses, and no credentials, keys or tokens (configuration uses environment variables or a local key file excluded by `.gitignore`). A review checklist is completed before every push.
-- This project was developed for educational purposes as part of the DEPI program.
-- The dataset is subject to the licence of its publisher on Kaggle (to be confirmed and recorded here).
- 
+
+<div align="center">
+
+### 🏛️ BFCAI Team · DEPI Data Scientist Track
+
+| # | Team Member |
+|:---:|:---|
+| 1 | **شريف أيمن السيد عزب** |
+| 2 | **سما داود محمد المشوخي** |
+| 3 | **علي محمد حسن محمد** |
+| 4 | **منة مجدي حسن احمد** |
+| 5 | **روان باسم محمد عبدالستار** |
+
+</div>
+
+---
+
+<div align="center">
+
+**Built with 💚 by the BFCAI Team for the DEPI Internship**
+
+*Turning Retail Data into Intelligent Decisions.*
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,20,24,30&height=120&section=footer" width="100%" alt="Footer"/>
+
+</div>
